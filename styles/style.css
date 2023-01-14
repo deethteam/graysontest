@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.section__block{
+    display: flex;
+    justify-content: space-between;
+}
+.section__title{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 67px;
+    color: #000;
+    margin: 50px 0 18px;
+    text-align: center;
+}
+.section__text{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    padding: 25px 0;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    font-size: 31px;
+    letter-spacing: 2px;
+}
+.header__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header__item{
+    position: relative;
+}
+.header__link,.header__dropdown-link{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: black;
+    text-transform: uppercase;
+}
+.header__link:hover, .header__dropdown-link:hover{
+    color: #41A28E;
+}
+.header__item:hover .header__dropdown{
+    display: block;
+}
+.header__dropdown{
+    position: absolute;
+    top: 18px;
+    background: #fff;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    width: 160px;
+    /* opacity: 0;
+    z-index: -1; */
+    display: none;
+    z-index: 10;
+}
+.header__dropdown-item:nth-child(2){
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+.header__dropdown-link{
+    padding: 12px 30px;
+    display: block;
+}
+
+.header__form{
+    display: flex;
+}
+.header__search{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #41A28E;
+    margin-right: 4px;
+    outline: none;
+}
+.header__button{
+    width: 28px;
+    background: #41A28E;
+    padding: 7px;
+    border: none;
+    color: #fff;
+}
+
+/* main intro section */
+
+.intro{
+    background: url(../images/bg.png) center/cover no-repeat;
+    height: calc(100vh - 87px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro__title{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 17px 61px;
+    margin-bottom: 30px;
+}
+.intro__text{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.intro__link{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    padding: 22px 34px;
+    background: #fff;
+}
+.intro__link:hover{
+    background: #41A28E
+}
+
+/* main commerce section */
+
+.commerce{
+    padding: 48px 0 72px;
+}
+
+.commerce__box{
+    width: 255px;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+.commerce__box:hover .commerce__text{
+    transform: translateY(0px);
+    transition: .3s;
+}
+.commerce__img{
+    height: 100%;
+    width: 100%;
+}
+.commerce__text{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    background: rgba(75, 72, 72, 0.7);
+    padding: 2px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+
+
+/* main project section */
+
+.project{
+    height: 400px;
+    background: url(../images/commerce_bg.png) center/cover no-repeat;
+}
+.project .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.project__text{
+    font-family: "Playfair Display";
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+.project__title{
+    font-family: "Playfair Display";
+    font-size: 50px;
+    line-height: 67px;
+    color: #fff;
+    margin-bottom: 22px;
+}
+.project__button{
+    font-family: "Playfair Display";
+    font-size: 12px;
+    color: #000;
+    padding: 23px 42px;
+    border: none;
+}
+.project__button:hover{
+    background: #41A28E;
+}
+
+/* main jacket section */
+
+.jacket{
+    margin-bottom: 50px;
+}
+.jacket .container{
+    margin-top: 70px;
+}
+.jacket__box{
+    width: 255px;
+}
+.jacket__shop{
+    height: 340px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.jacket__image{
+    width: 100%;
+    height: 100%;
+}
+.jacket__text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4B484B;
+    padding: 10px 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.jacket__icons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 18px;
+    transform: translateY(100%);
+    transition: .3s;
+}
+.jacket__shop:hover .jacket__icons{
+    transform: translateY(0%);
+}
+.jacket__cart,.jacket__like{
+    color: #fff;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 12px;
+}
+.jacket__cart span{
+    margin-left: 15px;
+}
+.jacket__like{
+    margin-left: 22px;
+}
+.jacket__info{
+    margin-top: 43px;
+}
+.jacket__name{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 6px;
+}
+.jacket__price{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+}
+.jacket__price span{
+    color: #909090;
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+
+/* footer */
+
+.footer{
+    background: #000;
+}
+.footer__block{
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 15px;
+}
+.footer__box{
+    width: 255px;
+}
+.footer__title{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.footer__link{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    line-height: 36px;
+}
+.footer__link:hover{
+    color: #41A28E;
+}
+.footer__link i{
+    font-size: 17px;
+    margin-right: 10px;
+    width: 18px;
+}
+.footer__input{
+    display: flex;
+    margin-bottom: 20px;
+}
+.footer__input input{
+    padding: 14px 10px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+.footer__input button{
+    padding: 12px 10px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    background: #41A28E;
+    border: none;
+}
+.footer__join-text{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    margin-bottom: 22px;
+}
+.footer__pay{
+    display: flex;
+}
+.footer__pay i{
+    color: #fff;
+    font-size: 27px;
+    margin-right: 25px;
+}
+.footer-content{
+    background: #121212;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer__text{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+}
+.footer__text span{
+    text-transform: uppercase;
+    text-shadow: 0px 0px 4px #E52D27;
+}
